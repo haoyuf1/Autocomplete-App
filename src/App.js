@@ -1,25 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+export default {
+  queryDashboard: '/dashboard',
+  queryTableTitles: 'OPTIONS /sv/voyage/',
+  queryVoyageList: 'GET /sv/voyage/',
+  queryFilter: 'POST /sv/voyage/',
+  querySort:'POST /sv/voyage/',
+  queryAutoComplete:'POST /sv/voyage/autocomplete',
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  queryIntegerRange:'GET /sv/voyage/aggregations'
+
 }
-
-export default App;
